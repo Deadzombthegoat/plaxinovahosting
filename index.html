@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to PLAXINOVA - Game & VPS Hosting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #000;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+        .discord-link {
+            display: block;
+            margin-top: 15px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .discord-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function copyToClipboard() {
+            const discordLink = 'https://discord.gg/DawSmhCFTv';
+            navigator.clipboard.writeText(discordLink).then(() => {
+                alert('Discord link copied to clipboard!');
+            }).catch(err => {
+                alert('Failed to copy link: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to PLAXINOVA</h1>
+        <p>Your premier choice for game hosting and VPS solutions.</p>
+    </header>
+
+    <main>
+        <p>
+            At PLAXINOVA, we understand the importance of reliable and high-performance hosting services. Our game and VPS hosting solutions are designed to deliver speed and stability, ensuring uninterrupted gaming experiences. 
+        </p>
+        <p>
+            With state-of-the-art infrastructure, top-tier support, and a commitment to excellence, we provide hosting tailored to meet the needs of gamers and developers alike. Whether you're launching a new game server, hosting a website, or managing a VPS, we have the tools and expertise to help you succeed.
+        </p>
+        <p>
+            <strong>Key Features:</strong>
+            <ul style="text-align: left; margin: 0 auto; display: inline-block;">
+                <li>24/7 Customer Support</li>
+                <li>Easy Setup and Management</li>
+                <li>Scalable Resources</li>
+                <li>High-Speed Performance</li>
+                <li>Secure Data Protection</li>
+            </ul>
+        </p>
+        
+        <img src="1.gif" alt="PLAXINOVA Hosting Image">
+
+        <a href="https://store.plaxinova.online" class="button">Visit Our Store</a>
+        <span class="discord-link" onclick="copyToClipboard()">Join Our Hosting Discord</span>
+    </main>
+
+</body>
+</html>
