@@ -3,104 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to PLAXINOVA - Game & VPS Hosting</title>
+    <title>PLAXINOVA - Game & VPS Hosting</title>
     
     <!-- Google Ads script -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5671246007525668"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            background-image: url('1.gif'); /* Set the GIF as the background */
-            background-size: cover; /* Cover the entire viewport */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Don't repeat the image */
-            color: white; /* Make text color white for contrast */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101010; /* Dark background */
+            color: #e0e0e0; /* Light gray text */
         }
         header {
-            background-color: rgba(40, 44, 52, 0.8); /* Slightly transparent background */
-            color: white;
-            padding: 20px;
+            background: rgba(20, 20, 20, 0.9);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #444; /* Subtle border for separation */
         }
-        h1 {
-            margin-top: 0;
+        header h1 {
+            margin-bottom: 10px;
         }
-        p {
-            color: #fff; /* Change text color to white */
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 20px auto;
+        .nav {
+            margin-top: 10px;
+        }
+        .nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
         }
         .button {
-            background-color: #000;
+            background-color: #444; /* Dark button */
             color: white;
             padding: 15px 30px;
             border: none;
             border-radius: 5px;
             text-decoration: none;
             font-size: 16px;
-            margin-top: 20px;
+            margin: 10px;
             display: inline-block;
             transition: background-color 0.3s;
         }
         .button:hover {
-            background-color: #444;
+            background-color: #666; /* Lighter button on hover */
         }
-        .discord-link {
-            display: block;
-            margin-top: 15px;
-            color: #007bff;
-            text-decoration: none;
-            font-size: 16px;
-            cursor: pointer;
+        .features, .footer {
+            padding: 40px 20px;
+            text-align: center;
+            background: rgba(20, 20, 20, 0.9); /* Dark background */
+            margin: 20px 0;
         }
-        .discord-link:hover {
-            text-decoration: underline;
+        .features h3, .footer h4 {
+            margin-bottom: 20px;
+        }
+        .feature-item {
+            margin: 20px 0;
+        }
+        footer {
+            background: rgba(20, 20, 20, 0.9);
+            padding: 20px 0;
+            border-top: 1px solid #444; /* Subtle border for separation */
         }
     </style>
-    <script>
-        function copyToClipboard() {
-            const discordLink = 'https://discord.gg/DawSmhCFTv';
-            navigator.clipboard.writeText(discordLink).then(() => {
-                alert('Discord link copied to clipboard!');
-            }).catch(err => {
-                alert('Failed to copy link: ', err);
-            });
-        }
-    </script>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to PLAXINOVA</h1>
-        <p>Your premier choice for game hosting and VPS solutions.</p>
+        <h1>PLAXINOVA</h1>
+        <div class="nav">
+            <a href="#services">Services</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+            <a href="#store" class="button">Visit Our Store</a>
+        </div>
     </header>
 
-    <main>
-        <p>
-            At PLAXINOVA, we understand the importance of reliable and high-performance hosting services. Our game and VPS hosting solutions are designed to deliver speed and stability, ensuring uninterrupted gaming experiences. 
-        </p>
-        <p>
-            With state-of-the-art infrastructure, top-tier support, and a commitment to excellence, we provide hosting tailored to meet the needs of gamers and developers alike. Whether you're launching a new game server, hosting a website, or managing a VPS, we have the tools and expertise to help you succeed.
-        </p>
-        <p>
-            <strong>Key Features:</strong>
-            <ul style="text-align: left; margin: 0 auto; display: inline-block;">
-                <li>24/7 Customer Support</li>
-                <li>Easy Setup and Management</li>
-                <li>Scalable Resources</li>
-                <li>High-Speed Performance</li>
-                <li>Secure Data Protection</li>
-            </ul>
-        </p>
-        
-        <a href="https://store.plaxinova.online" class="button">Visit Our Store</a>
-        <span class="discord-link" onclick="copyToClipboard()">Join Our Hosting Discord</span>
-    </main>
+    <section class="hero">
+        <h2>Welcome to PLAXINOVA</h2>
+        <p>Your premier choice for game hosting and VPS solutions.</p>
+        <div class="buttons">
+            <a href="#getstarted" class="button">Get Started</a>
+            <a href="#learnmore" class="button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h3>Why Choose PLAXINOVA?</h3>
+        <div class="feature-item">
+            <h4>Reliable Performance</h4>
+            <p>Our services ensure a smooth experience with minimal downtime.</p>
+        </div>
+        <div class="feature-item">
+            <h4>24/7 Support</h4>
+            <p>Get assistance anytime with our dedicated customer support.</p>
+        </div>
+        <div class="feature-item">
+            <h4>Scalable Resources</h4>
+            <p>Flexible plans to meet the needs of both small and large projects.</p>
+        </div>
+    </section>
+
+    <footer>
+        <h4>&copy; 2023 PLAXINOVA. All Rights Reserved.</h4>
+        <p>Follow us on <a href="https://discord.gg/DawSmhCFTv" style="color: #007bff;">Discord</a>!</p>
+    </footer>
 
 </body>
 </html>
