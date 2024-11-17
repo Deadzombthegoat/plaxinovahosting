@@ -98,7 +98,7 @@ $current_page = 'homepage';
     <div class="main">
         <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h1>
         <p>Your account role: <?php echo $_SESSION['is_admin'] === 'true' ? 'Admin' : 'User'; ?></p>
-        <p>This is your dashboard area. You can link to Pterodactyl API here.</p>
+        <p>Pterodactyl api</p>
     </div>
 
     <footer>
