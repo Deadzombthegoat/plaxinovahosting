@@ -41,8 +41,8 @@ body {
 }
 
 .box {
-    width: 120px;
-    height: 120px;
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
     border: 5px solid #00ffff;
     background-color: rgba(0, 255, 255, 0.1);
     position: absolute;
@@ -55,12 +55,12 @@ body {
 }
 
 #box1 {
-    left: calc(50% - 180px);
+    left: 20px; /* Positioned to the left side */
     bottom: -120px;
 }
 
 #box2 {
-    left: calc(50% + 30px);
+    right: 20px; /* Positioned to the right side */
     bottom: -120px;
 }
 
@@ -71,6 +71,7 @@ body {
     background-color: transparent;
     color: #00ffff;
     cursor: pointer;
+    border-radius: 20px; /* Making the button round */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
