@@ -8,8 +8,6 @@ window.onload = function() {
     box2.style.animation = 'slideUp 1s forwards';
     
     setTimeout(() => {
-        button1.style.animation = 'flyIn 0.5s forwards';
-        button2.style.animation = 'flyIn 0.5s forwards';
         button1.style.opacity = '1';
         button2.style.opacity = '1';
     }, 1000);
