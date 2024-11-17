@@ -53,12 +53,12 @@ body {
 }
 
 #box1 {
-    left: calc(50% - 120px);
+    left: calc(50% - 160px); /* Move this further to the left */
     bottom: -120px;
 }
 
 #box2 {
-    left: calc(50% + 20px);
+    left: calc(50% + 60px); /* Move this further to the right */
     bottom: -120px;
 }
 
@@ -66,7 +66,6 @@ body {
     width: 80px;
     height: 40px;
     border: 3px solid #00ffff;
-    border-radius: 20px;
     background-color: transparent;
     color: #00ffff;
     cursor: pointer;
