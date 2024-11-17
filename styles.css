@@ -37,12 +37,25 @@ body {
 .cat-image {
     width: 200px; 
     height: auto; 
-    margin: 40px 0; 
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.text-left, .text-right {
+    width: 48%;
+    font-size: 18px;
+    color: #00ffff;
 }
 
 .box {
-    width: 200px; /* Increased width */
-    height: 200px; /* Increased height */
+    width: 200px; 
+    height: 200px; 
     border: 5px solid #00ffff;
     background-color: rgba(0, 255, 255, 0.1);
     position: absolute;
@@ -55,12 +68,12 @@ body {
 }
 
 #box1 {
-    left: 20px; /* Positioned to the left side */
+    left: 20px; 
     bottom: -120px;
 }
 
 #box2 {
-    right: 20px; /* Positioned to the right side */
+    right: 20px; 
     bottom: -120px;
 }
 
@@ -71,7 +84,7 @@ body {
     background-color: transparent;
     color: #00ffff;
     cursor: pointer;
-    border-radius: 20px; /* Making the button round */
+    border-radius: 20px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
