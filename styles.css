@@ -22,7 +22,15 @@ body {
 }
 
 .topbar h1 {
-    color: #00ffff;
+    background: linear-gradient(to right, #00ffff, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 3s infinite alternate;
+}
+
+@keyframes colorShift {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 .container {
@@ -77,7 +85,8 @@ body {
 }
 
 .button:hover {
-    animation: glow 0.5s infinite alternate;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 @keyframes glow {
