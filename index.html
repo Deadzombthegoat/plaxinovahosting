@@ -6,24 +6,85 @@
     <title>PLAXINOVA - Game & VPS Hosting</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            background-color: #1e1e1e;  
+            color: white; 
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333; 
+            padding: 20px;
+            box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.5); 
+            position: relative;
+        }
+
+        .sidebar h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cat-image {
+            display: block;
+            margin: 0 auto;
+            width: 100%; 
+            max-width: 200px; 
+        }
+
+        .button {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #444; /* Button color */
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: #666; /* Button hover color */
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            box-shadow: 0 0 10px cyan; /* Neon glow for the content */
+            margin-left: 20px; /* Spacing from sidebar */
+            background-color: #252525; /* Content background */
+            height: auto;  /* Automatic height based on content */
+        }
+
+        .text-column {
+            min-height: 80vh; /* Minimum height for the text area */
+            color: cyan; /* Text color in the content area */
+            padding: 20px;
+            border: 1px solid cyan; /* Border for the text column */
+        }
+    </style>
 </head>
 <body>
 
-    <header class="topbar">
+    <div class="sidebar">
         <h1>PLAXINOVA</h1>
-    </header>
-
-    <div class="container">
         <img src="cat.png" alt="Cat Image" class="cat-image">
-        <div class="text-container">
-            <div class="text-left">PLEASE HELP ME</div>
-            <div class="text-right">HELP ME</div>
-        </div>
-        <div class="box" id="box1">
-            <a href="login.php" class="button" id="button1">Login</a>
-        </div>
-        <div class="box" id="box2">
-            <a href="register.php" class="button" id="button2">Register</a> 
+        <a href="login.php" class="button">Login</a>
+        <a href="register.php" class="button">Register</a>
+        <a href="about.php" class="button">About Us</a>
+        <a href="services.php" class="button">Services</a>
+        <a href="contact.php" class="button">Contact</a>
+    </div>
+
+    <div class="content">
+        <div class="text-column" contenteditable="true">
+           
+            Hola
         </div>
     </div>
 
