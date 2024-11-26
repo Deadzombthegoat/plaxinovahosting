@@ -3,58 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plaxinova Dashboard</title>
+    <title>Welcome to Plaxinova - Pterodactyl Billing System</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
             color: #ffffff;
             margin: 0;
-            display: flex;
-        }
-        .sidebar {
-            background-color: #0d0d0d;
             padding: 20px;
-            width: 250px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-            height: 100vh;
         }
-        .sidebar h2 {
-            color: #00bfff;
+        header {
             text-align: center;
+            margin-bottom: 30px;
         }
-        .content {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh; /* To center the text vertically */
+        #info-section {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
         }
-        .content h1 {
+        h2 {
             color: #00bfff;
-            font-size: 3em;
         }
-        .footer {
+        p {
+            line-height: 1.6;
+        }
+        button {
+            background-color: #00bfff;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 15px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #007acc;
+        }
+        .button-container {
             text-align: center;
             margin-top: 20px;
-            color: #bbb;
         }
     </style>
 </head>
 <body>
-
-    <div class="sidebar">
-        <h2>Services</h2>
-        <p>Pterodactyl Servers: <span id="server-count">5</span></p>
-    </div>
-
-    <div class="content">
-        <h1>Plaxinova</h1>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2023 Plaxinova</p>
-    </div>
-
+    <header>
+        <h1>Welcome to Plaxinova!</h1>
+        <h2>Your Ultimate Pterodactyl Server Hosting Solution</h2>
+    </header>
+    <main>
+        <section id="info-section">
+            <h2>Why Choose Plaxinova?</h2>
+            <p>
+                At Plaxinova, we take pride in providing top-notch hosting solutions that are designed to meet your needs.
+                Our servers run smoothly, ensuring that your gaming or community server remains online and responsive at all times.
+            </p>
+            <p>
+                Our team is made up of friendly and sometimes funny staff who are dedicated to making your experience as enjoyable as possible!
+                We understand that sometimes things can go awry, and that's why our support team is always here to assist you.
+            </p>
+            <p>
+                With Plaxinova, you can expect:
+            </p>
+            <ul>
+                <li><strong>Reliable Performance:</strong> Our optimized servers are built to handle high traffic and demanding applications.</li>
+                <li><strong>Excellent Customer Support:</strong> Our friendly team is here to help you with any question or issue you may have.</li>
+                <li><strong>Hilarious Staff:</strong> We're not just about business; we like to keep it light and fun!</li>
+                <li><strong>Seamless Experience:</strong> Enjoy a hassle-free setup and smooth operation of all your server needs.</li>
+            </ul>
+            <p>
+                Don't miss out on the enjoyment and reliability that Plaxinova has to offer!
+            </p>
+            <div class="button-container">
+                <button id="login-btn">Log In</button>
+                <button id="register-btn">Register</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
