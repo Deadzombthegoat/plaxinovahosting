@@ -1,0 +1,9 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Ensure the requested URI does not correspond to a valid file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite URLs to point to the corresponding .html file
+RewriteRule ^([a-zA-Z0-9_]+)/?$ $1.html [L]
