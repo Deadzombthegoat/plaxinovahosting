@@ -35,13 +35,68 @@ nav a:hover {
     box-shadow: 0 0 10px #9b59b6;
 }
 
-main {
+.main {
     padding: 20px;
 }
 
-ul {
+.hosting-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.hosting-box {
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    flex: 1; /* Allows boxes to stretch */
+    max-width: 300px;
+    min-width: 250px; /* Set a minimum width */
+    text-align: center;
+}
+
+.hosting-box h3 {
+    color: #9b59b6;
+}
+
+.hosting-box ul {
     list-style-type: none;
     padding: 0;
+}
+
+.hosting-box button {
+    padding: 10px 15px;
+    background-color: #9b59b6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hosting-box button:hover {
+    background-color: #8e44ad;
+}
+
+.get-started-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.get-started-button:hover {
+    background-color: #8e44ad;
 }
 
 footer {
