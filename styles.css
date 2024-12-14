@@ -1,119 +1,80 @@
-/* Resetting Box Model */
-* {
-    box-sizing: border-box;
-}
-
-/* Body Styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;  /* Light gray background */
 }
 
-/* Wrapper Styles */
+/* Wrapper */
 .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
+    text-align: center;
 }
 
-/* Header Styles */
-header {
-    text-align: center;
+/* Header Styling */
+header h1 {
+    color: #8A2BE2; /* Purple */
+    text-shadow: 0 0 20px #8A2BE2, 0 0 30px #BF00FF; /* Neon glow effect */
     margin-bottom: 20px;
 }
 
 /* Navigation Styles */
 nav {
-    margin: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #FFF; /* White text */
+    padding: 10px 20px;
+    border: 2px solid #8A2BE2; /* Purple border */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #BF00FF; /* Glow effect on links */
+}
+
+nav a:hover {
+    background-color: #8A2BE2; /* Purple background on hover */
+    color: #000; /* Black text on hover */
+    box-shadow: 0 0 15px #BF00FF; /* Glow effect on hover */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #8A2BE2; /* Purple */
+    text-shadow: 0 0 15px #8A2BE2, 0 0 25px #BF00FF; /* Neon glow effect */
 }
 
 /* Button Styles */
-.hosting-button {
-    margin: 0 10px;
-    padding: 10px 15px;
-    background-color: #007BFF;  /* Primary blue color */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.hosting-button:hover {
-    background-color: #0056b3;  /* Darker blue on hover */
-}
-
-/* Main Content Styles */
-main {
-    text-align: center;
-}
-
-/* Hosting Boxes Styles */
-.hosting-boxes {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between boxes */
-    flex-wrap: wrap; /* Wrap to next line if necessary */
-}
-
-/* Individual Hosting Box Styles */
-.hosting-box {
-    background: #fff;  /* White background for boxes */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    width: 250px; /* Fixed width for all boxes */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.large-box {
-    width: 300px; /* Wider for large plan */
-}
-
-/* Image Styles */
-.hosting-box img {
-    width: 100%; /* Make images fill their box */
-    height: 200px; /* Fixed height for all images */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-/* Heading Styles */
-h3 {
-    margin: 10px 0;
-}
-
-/* List Styles */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* Button Styles for Choices */
-button {
-    padding: 10px 15px;
-    background-color: #28a745;  /* Green color for buttons */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #218838;  /* Darker green on hover */
-}
-
-/* Get Started Button Style */
 .get-started-button {
+    background-color: #8A2BE2; /* Button color */
+    color: #FFF; /* Button text color */
     padding: 10px 20px;
-    background-color: #FF5733;  /* Example: Orange color for "Get Started" */
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px #BF00FF; /* Neon glow effect on button */
+    box-shadow: 0 0 10px #BF00FF; /* General glow effect */
 }
 
 .get-started-button:hover {
-    background-color: #C70039;  /* Darker orange on hover */
+    background-color: #BF00FF; /* Brighter purple on hover */
+    box-shadow: 0 0 30px #8A2BE2; /* More prominent glow on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav a {
+        display: block; /* Stack links vertically on small screens */
+        margin: 5px 0;
+    }
 }
