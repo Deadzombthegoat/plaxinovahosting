@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    box-sizing: border-box; /* Include padding and border in total width and height */
 }
 
 html, body {
-    height: 100%; /* Full height for both html and body */
+    height: 100%; /* Full height for html and body */
     margin: 0; /* Remove default margin */
     font-family: 'Arial', sans-serif; /* Font styling */
     background-color: #101010; /* Dark background */
@@ -48,11 +48,35 @@ nav a:hover {
 
 main {
     flex: 1; /* Allow main to grow to fill space */
-    display: flex; /* Flexbox for layout within the main section */
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center content horizontally */
     padding: 20px;
     overflow: hidden; /* Hide any overflow content */
+}
+
+.hosting-section {
+    width: 100%;
+    margin-bottom: 40px; /* Space between sections */
+    text-align: center; /* Center text in sections */
+}
+
+.select-hosting {
+    margin: 20px 0; /* Space around the button */
+}
+
+.hosting-button {
+    padding: 10px 20px;
+    background-color: #9b59b6; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.hosting-button:hover {
+    background-color: #8e44ad; /* Hover effect */
 }
 
 .hosting-boxes {
@@ -70,9 +94,13 @@ main {
     padding: 20px; /* Inner padding */
     text-align: center; /* Centered text in boxes */
     flex: 1; /* Flex basis */
-    max-width: 300px; /* Maximum width */
+    max-width: 300px; /* Maximum width of boxes */
     transition: transform 0.2s; /* Smooth scaling effect */
     min-height: 200px; /* Minimum height for uniformity */
+}
+
+.hosting-box.large-box {
+    flex: 1.5; /* Makes the middle box larger than others */
 }
 
 .hosting-box img {
@@ -121,10 +149,16 @@ main {
     font-size: 18px; /* Font size */
     cursor: pointer; /* Pointer cursor */
     transition: background-color 0.3s; /* Smooth background change */
+    margin-top: 20px; /* Space above button */
 }
 
 .get-started-button:hover {
     background-color: #8e44ad; /* Hover effect for button */
+}
+
+.support-section {
+    margin: 40px 0; /* Space above and below the support section */
+    text-align: center; /* Centering the text */
 }
 
 footer {
@@ -133,9 +167,4 @@ footer {
     padding: 10px; /* Padding for footer */
     background-color: #1a1a1a; /* Footer background */
     color: #ffffff; /* Footer text color */
-}
-
-/* Ensure a minimum height for main to fit boxes */
-.hosting-boxes {
-    min-height: 200px; /* Minimum height for hosting boxes to be visible */
 }
