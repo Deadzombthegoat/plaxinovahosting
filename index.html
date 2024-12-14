@@ -11,149 +11,26 @@
         <header>
             <h1>Plaxinova Hosting Service</h1>
             <nav>
-                <button onclick="scrollToSection('minecraft-section')">Minecraft Hosting</button>
-                <button onclick="scrollToSection('vps-section')">VPS Hosting</button>
-                <button onclick="scrollToSection('rust-section')">Rust Hosting</button>
-                <button onclick="scrollToSection('support-section')">Support</button>
+                <a href="minecraft.html" class="hosting-button">Minecraft Hosting</a>
+                <a href="vps.html" class="hosting-button">VPS Hosting</a>
+                <a href="rust.html" class="hosting-button">Rust Hosting</a>
+                <a href="support.html" class="hosting-button">Support</a>
             </nav>
         </header>
         <main>
-            <section id="minecraft-section">
-                <h2>Minecraft Hosting</h2>
-                <p>Discover our range of Minecraft hosting plans.</p>
-                <div class="select-hosting">
-                    <button class="hosting-button">Select Minecraft Hosting</button>
-                </div>
-                <div class="hosting-boxes">
-                    <div class="hosting-box large-box">
-                        <img src="images/minecraft1.png" alt="Large Minecraft Plan">
-                        <h3>Large Plan</h3>
-                        <ul>
-                            <li>Feature A</li>
-                            <li>Feature B</li>
-                            <li>Feature C</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                    <div class="hosting-box">
-                        <img src="images/minecraft2.png" alt="Small Minecraft Plan 1">
-                        <h3>Small Plan 1</h3>
-                        <ul>
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                    <div class="hosting-box">
-                        <img src="images/minecraft3.png" alt="Small Minecraft Plan 2">
-                        <h3>Small Plan 2</h3>
-                        <ul>
-                            <li>Feature X</li>
-                            <li>Feature Y</li>
-                            <li>Feature Z</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                </div>
+            <section>
+                <h2>Welcome to Plaxinova Hosting</h2>
+                <p>Your trusted provider for game hosting solutions.</p>
+                <p>Click the buttons above to explore our different hosting options!</p>
             </section>
-            <section id="vps-section">
-                <h2>VPS Hosting</h2>
-                <p>Explore our VPS hosting options.</p>
-                <div class="select-hosting">
-                    <button class="hosting-button">Select VPS Hosting</button>
-                </div>
-                <div class="hosting-boxes">
-                    <div class="hosting-box large-box">
-                        <img src="images/vps1.png" alt="Large VPS Plan">
-                        <h3>Large Plan</h3>
-                        <ul>
-                            <li>Feature A</li>
-                            <li>Feature B</li>
-                            <li>Feature C</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                    <div class="hosting-box">
-                        <img src="images/vps2.png" alt="Small VPS Plan 1">
-                        <h3>Small Plan 1</h3>
-                        <ul>
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                    <div class="hosting-box">
-                        <img src="images/vps3.png" alt="Small VPS Plan 2">
-                        <h3>Small Plan 2</h3>
-                        <ul>
-                            <li>Feature X</li>
-                            <li>Feature Y</li>
-                            <li>Feature Z</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                </div>
-            </section>
-            <section id="rust-section">
-                <h2>Rust Hosting</h2>
-                <p>Find the best plan for Rust game hosting.</p>
-                <div class="select-hosting">
-                    <button class="hosting-button">Select Rust Hosting</button>
-                </div>
-                <div class="hosting-boxes">
-                    <div class="hosting-box large-box">
-                        <img src="images/rust1.png" alt="Large Rust Plan">
-                        <h3>Large Plan</h3>
-                        <ul>
-                            <li>Feature A</li>
-                            <li>Feature B</li>
-                            <li>Feature C</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                    <div class="hosting-box">
-                        <img src="images/rust2.png" alt="Small Rust Plan 1">
-                        <h3>Small Plan 1</h3>
-                        <ul>
-                            <li>Feature 1</li>
-                            <li>Feature 2</li>
-                            <li>Feature 3</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                    <div class="hosting-box">
-                        <img src="images/rust3.png" alt="Small Rust Plan 2">
-                        <h3>Small Plan 2</h3>
-                        <ul>
-                            <li>Feature X</li>
-                            <li>Feature Y</li>
-                            <li>Feature Z</li>
-                        </ul>
-                        <button>Choose Plan</button>
-                    </div>
-                </div>
-            </section>
-            <section id="support-section">
-                <h2>Support</h2>
-                <p>If you have any questions or need assistance, please reach out via:</p>
-                <p>Email: <a href="mailto:support@plaxinova.com">support@plaxinova.com</a></p>
-                <p>Discord: <a href="https://discord.gg/yourdiscordlink" target="_blank">Join our Discord</a></p>
+            <section>
+                <h2>About Us</h2>
+                <p>Plaxinova offers a variety of hosting services tailored to meet the needs of gamers and businesses alike.</p>
             </section>
         </main>
         <footer>
             <p>&copy; 2023 Plaxinova Hosting Service. All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-            // Change the URL without reloading the page
-            history.pushState(null, null, `/${sectionId}`);
-        }
-    </script>
 </body>
 </html>
