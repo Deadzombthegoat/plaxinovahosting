@@ -1,170 +1,91 @@
 * {
-    box-sizing: border-box; /* Include padding and border in total width and height */
+    box-sizing: border-box;
 }
 
-html, body {
-    height: 100%; /* Full height for html and body */
-    margin: 0; /* Remove default margin */
-    font-family: 'Arial', sans-serif; /* Font styling */
-    background-color: #101010; /* Dark background */
-    color: #ffffff; /* White text */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Full viewport height */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #1a1a1a; /* Header background */
-    padding: 20px;
     text-align: center;
-    box-shadow: 0 0 20px #9b59b6; /* Shadow effect on header */
-}
-
-h1 {
-    color: #9b59b6; /* Header text color */
-    text-shadow: 0 0 10px #9b59b6; /* Glowing effect */
+    margin-bottom: 20px;
 }
 
 nav {
-    margin: 20px 0;
-}
-
-nav a {
-    color: #ffffff; /* Link color */
-    margin: 0 15px;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-nav a:hover {
-    background-color: #9b59b6; /* Hover background color */
-    border-radius: 5px; /* Rounded corners on hover */
-    box-shadow: 0 0 10px #9b59b6; /* Shadow on hover */
-}
-
-main {
-    flex: 1; /* Allow main to grow to fill space */
-    display: flex;
-    flex-direction: column; /* Stack sections vertically */
-    align-items: center; /* Center content horizontally */
-    padding: 20px;
-    overflow: hidden; /* Hide any overflow content */
-}
-
-.hosting-section {
-    width: 100%;
-    margin-bottom: 40px; /* Space between sections */
-    text-align: center; /* Center text in sections */
-}
-
-.select-hosting {
-    margin: 20px 0; /* Space around the button */
+    margin: 10px 0;
 }
 
 .hosting-button {
-    padding: 10px 20px;
-    background-color: #9b59b6; /* Button color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded edges */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth background change */
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .hosting-button:hover {
-    background-color: #8e44ad; /* Hover effect */
+    background-color: #0056b3;
+}
+
+main {
+    text-align: center;
 }
 
 .hosting-boxes {
-    display: flex; /* Flexbox for layout */
-    justify-content: center; /* Center items */
-    flex-wrap: wrap; /* Allow wrapping */
-    padding: 20px 0; /* Top/bottom padding */
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between boxes */
+    flex-wrap: wrap; /* Wrap to next line if necessary */
 }
 
 .hosting-box {
-    background-color: #2c2c2c; /* Hosting box color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    margin: 10px; /* Spacing between boxes */
-    padding: 20px; /* Inner padding */
-    text-align: center; /* Centered text in boxes */
-    flex: 1; /* Flex basis */
-    max-width: 300px; /* Maximum width of boxes */
-    transition: transform 0.2s; /* Smooth scaling effect */
-    min-height: 200px; /* Minimum height for uniformity */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px; /* Fixed width for all boxes */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.hosting-box.large-box {
-    flex: 1.5; /* Makes the middle box larger than others */
+.large-box {
+    width: 300px; /* Wider for large plan */
 }
 
 .hosting-box img {
-    width: 100%; /* Full width images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px 5px 0 0; /* Round top corners */
+    width: 100%; /* Make images fill their box */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
-.hosting-box:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+h3 {
+    margin: 10px 0;
 }
 
-.hosting-box h3 {
-    color: #9b59b6; /* Heading color */
-    margin: 10px 0; /* Spacing above/below headings */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.hosting-box ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.hosting-box button {
-    padding: 10px 15px; /* Button padding */
-    background-color: #9b59b6; /* Button background color */
-    border: none; /* No border */
-    color: white; /* Text color */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded edges */
-    margin-top: 10px; /* Spacing above */
-}
-
-.hosting-box button:hover {
-    background-color: #8e44ad; /* Button hover color */
-}
-
-.get-started-button {
-    display: inline-block; /* Inline block for centering */
-    padding: 15px 25px; /* Button padding */
-    background-color: #9b59b6; /* Button background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded edges */
-    text-align: center; /* Center button text */
-    text-decoration: none; /* No underline */
-    font-size: 18px; /* Font size */
-    cursor: pointer; /* Pointer cursor */
-    transition: background-color 0.3s; /* Smooth background change */
-    margin-top: 20px; /* Space above button */
-}
-
-.get-started-button:hover {
-    background-color: #8e44ad; /* Hover effect for button */
-}
-
-.support-section {
-    margin: 40px 0; /* Space above and below the support section */
-    text-align: center; /* Centering the text */
-}
-
-footer {
-    margin-top: auto; /* Push footer to the bottom */
-    text-align: center; /* Centered text */
-    padding: 10px; /* Padding for footer */
-    background-color: #1a1a1a; /* Footer background */
-    color: #ffffff; /* Footer text color */
+button:hover {
+    background-color: #218838;
 }
