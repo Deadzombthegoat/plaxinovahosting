@@ -10,6 +10,12 @@ html, body {
     color: #ffffff; /* White text */
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
 header {
     background-color: #1a1a1a; /* Header background */
     padding: 20px;
@@ -43,10 +49,9 @@ nav a:hover {
 main {
     flex: 1; /* Allow main to grow to fill space */
     display: flex; /* Flexbox for layout within the main section */
-    align-items: center;  /* Vertically center content */
+    align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
     padding: 20px;
-    text-align: center; /* Centered text */
     overflow: hidden; /* Hide any overflow content */
 }
 
@@ -67,20 +72,13 @@ main {
     flex: 1; /* Flex basis */
     max-width: 300px; /* Maximum width */
     transition: transform 0.2s; /* Smooth scaling effect */
+    min-height: 200px; /* Minimum height for uniformity */
 }
 
 .hosting-box img {
     width: 100%; /* Full width images */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px 5px 0 0; /* Round top corners */
-}
-
-.large-box {
-    flex: 2; /* Larger middle box */
-}
-
-.small-box {
-    flex: 1; /* Standard smaller boxes */
 }
 
 .hosting-box:hover {
@@ -130,24 +128,14 @@ main {
 }
 
 footer {
+    margin-top: auto; /* Push footer to the bottom */
     text-align: center; /* Centered text */
     padding: 10px; /* Padding for footer */
     background-color: #1a1a1a; /* Footer background */
     color: #ffffff; /* Footer text color */
 }
 
-/* Additional styles to set height and prevent scrolling */
-html {
-    scroll-behavior: smooth; /* Smooth scrolling behavior */
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Full viewport height */
-}
-
-footer {
-    margin-top: auto; /* Push footer to the bottom */
-    background-color: #1a1a1a; /* Footer background */
+/* Ensure a minimum height for main to fit boxes */
+.hosting-boxes {
+    min-height: 200px; /* Minimum height for hosting boxes to be visible */
 }
