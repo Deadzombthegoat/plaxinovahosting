@@ -1,6 +1,11 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+html, body {
+    height: 100%; /* Full height for both html and body */
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Font styling */
     background-color: #101010; /* Dark background */
     color: #ffffff; /* White text */
 }
@@ -14,7 +19,7 @@ header {
 
 h1 {
     color: #9b59b6; /* Header text color */
-    text-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6; /* Glowing effect */
+    text-shadow: 0 0 10px #9b59b6; /* Glowing effect */
 }
 
 nav {
@@ -36,8 +41,13 @@ nav a:hover {
 }
 
 main {
+    flex: 1; /* Allow main to grow to fill space */
+    display: flex; /* Flexbox for layout within the main section */
+    align-items: center;  /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
     padding: 20px;
-    text-align: center; /* Centered text in main content */
+    text-align: center; /* Centered text */
+    overflow: hidden; /* Hide any overflow content */
 }
 
 .hosting-boxes {
@@ -111,7 +121,6 @@ main {
     text-align: center; /* Center button text */
     text-decoration: none; /* No underline */
     font-size: 18px; /* Font size */
-    margin: 20px auto; /* Centered margin */
     cursor: pointer; /* Pointer cursor */
     transition: background-color 0.3s; /* Smooth background change */
 }
@@ -124,8 +133,21 @@ footer {
     text-align: center; /* Centered text */
     padding: 10px; /* Padding for footer */
     background-color: #1a1a1a; /* Footer background */
-    position: relative; /* Relative positioning */
-    bottom: 0; /* Align to bottom */
-    width: 100%; /* Full width */
     color: #ffffff; /* Footer text color */
+}
+
+/* Additional styles to set height and prevent scrolling */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+}
+
+footer {
+    margin-top: auto; /* Push footer to the bottom */
+    background-color: #1a1a1a; /* Footer background */
 }
