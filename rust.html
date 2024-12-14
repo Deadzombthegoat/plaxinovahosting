@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <title>Plaxinova - Rust Hosting</title>
+    <title>Rust Hosting - Plaxinova</title>
 </head>
-
 <body>
-    <header>
-        <h1>Rust Hosting</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="minecraft.html">Minecraft Hosting</a>
-            <a href="vps.html">VPS Hosting</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Select Your Plan</h2>
-        <div class="hosting-boxes">
-            <div class="hosting-box small-box">
-                <img src="images/basic-rust.jpg" alt="Basic Plan Image">
-                <h3>Basic Plan</h3>
-                <ul>
-                    <li>2 GB RAM</li>
-                    <li>1 CPU Core</li>
-                    <li>10 Players</li>
-                    <li>Starting at $7/month</li>
-                </ul>
-                <button onclick="location.href='basic-rust.html'">Choose Plan</button>
+    <div class="wrapper">
+        <header>
+            <h1>Rust Hosting</h1>
+            <nav>
+                <a href="index.html" class="hosting-button">Home</a>
+                <a href="minecraft.html" class="hosting-button">Minecraft Hosting</a>
+                <a href="vps.html" class="hosting-button">VPS Hosting</a>
+                <a href="support.html" class="hosting-button">Support</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Available Plans</h2>
+            <div class="hosting-boxes">
+                <div class="hosting-box large-box">
+                    <img src="images/rust1.png" alt="Large Rust Plan">
+                    <h3>Large Plan</h3>
+                    <ul>
+                        <li>Feature A</li>
+                        <li>Feature B</li>
+                        <li>Feature C</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="hosting-box">
+                    <img src="images/rust2.png" alt="Small Rust Plan 1">
+                    <h3>Small Plan 1</h3>
+                    <ul>
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="hosting-box">
+                    <img src="images/rust3.png" alt="Small Rust Plan 2">
+                    <h3>Small Plan 2</h3>
+                    <ul>
+                        <li>Feature X</li>
+                        <li>Feature Y</li>
+                        <li>Feature Z</li>
+                    </ul>
+                    <button>Choose Plan</button>
+                </div>
             </div>
-            <div class="hosting-box large-box">
-                <img src="images/standard-rust.jpg" alt="Standard Plan Image">
-                <h3>Standard Plan</h3>
-                <ul>
-                    <li>4 GB RAM</li>
-                    <li>2 CPU Cores</li>
-                    <li>20 Players</li>
-                    <li>Starting at $12/month</li>
-                </ul>
-                <button onclick="location.href='standard-rust.html'">Choose Plan</button>
-            </div>
-            <div class="hosting-box small-box">
-                <img src="images/pro-rust.jpg" alt="Pro Plan Image">
-                <h3>Pro Plan</h3>
-                <ul>
-                    <li>8 GB RAM</li>
-                    <li>4 CPU Cores</li>
-                    <li>50 Players</li>
-                    <li>Starting at $25/month</li>
-                </ul>
-                <button onclick="location.href='pro-rust.html'">Choose Plan</button>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 Plaxinova. All rights reserved.</p>
-    </footer>
+        </main>
+        <footer>
+            <p>&copy; 2023 Plaxinova Hosting Service. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>
