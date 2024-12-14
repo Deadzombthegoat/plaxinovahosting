@@ -1,20 +1,20 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #101010;
-    color: #ffffff;
+    background-color: #f4f4f4;
+    color: #2c3e50;
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: #34495e;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0 20px #9b59b6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-    color: #9b59b6;
-    text-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6;
+    color: #ecf0f1;
+    margin: 0;
 }
 
 nav {
@@ -22,44 +22,64 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: #ecf0f1;
     margin: 0 15px;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px;
     transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #9b59b6;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #9b59b6;
+    background-color: #1abc9c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.main {
+main {
     padding: 20px;
+    text-align: center;
 }
 
 .hosting-boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 20px 0;
 }
 
 .hosting-box {
-    background-color: #2c2c2c;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 10px;
     padding: 20px;
-    flex: 1; /* Allows boxes to stretch */
-    max-width: 300px;
-    min-width: 250px; /* Set a minimum width */
     text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.2s;
+}
+
+.hosting-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.large-box {
+    flex: 2; /* Makes the middle box bigger */
+}
+
+.small-box {
+    flex: 1; /* Smaller boxes take standard width */
+}
+
+.hosting-box:hover {
+    transform: scale(1.05);
 }
 
 .hosting-box h3 {
-    color: #9b59b6;
+    margin: 10px 0;
+    color: #34495e;
 }
 
 .hosting-box ul {
@@ -69,7 +89,7 @@ nav a:hover {
 
 .hosting-box button {
     padding: 10px 15px;
-    background-color: #9b59b6;
+    background-color: #1abc9c;
     border: none;
     color: white;
     cursor: pointer;
@@ -78,13 +98,13 @@ nav a:hover {
 }
 
 .hosting-box button:hover {
-    background-color: #8e44ad;
+    background-color: #16a085;
 }
 
 .get-started-button {
     display: inline-block;
     padding: 15px 25px;
-    background-color: #9b59b6;
+    background-color: #1abc9c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -93,17 +113,19 @@ nav a:hover {
     font-size: 18px;
     margin: 20px auto;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .get-started-button:hover {
-    background-color: #8e44ad;
+    background-color: #16a085;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #1a1a1a;
+    background-color: #34495e;
     position: relative;
     bottom: 0;
     width: 100%;
+    color: #ecf0f1;
 }
