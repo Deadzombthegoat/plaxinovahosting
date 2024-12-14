@@ -10,10 +10,17 @@
     <div class="wrapper">
         <header>
             <h1>Plaxinova Hosting Service</h1>
+            <nav>
+                <button onclick="scrollToSection('minecraft-section')">Minecraft Hosting</button>
+                <button onclick="scrollToSection('vps-section')">VPS Hosting</button>
+                <button onclick="scrollToSection('rust-section')">Rust Hosting</button>
+                <button onclick="scrollToSection('support-section')">Support</button>
+            </nav>
         </header>
         <main>
-            <div class="hosting-section">
+            <section id="minecraft-section">
                 <h2>Minecraft Hosting</h2>
+                <p>Discover our range of Minecraft hosting plans.</p>
                 <div class="select-hosting">
                     <button class="hosting-button">Select Minecraft Hosting</button>
                 </div>
@@ -49,9 +56,10 @@
                         <button>Choose Plan</button>
                     </div>
                 </div>
-            </div>
-            <div class="hosting-section">
+            </section>
+            <section id="vps-section">
                 <h2>VPS Hosting</h2>
+                <p>Explore our VPS hosting options.</p>
                 <div class="select-hosting">
                     <button class="hosting-button">Select VPS Hosting</button>
                 </div>
@@ -87,9 +95,10 @@
                         <button>Choose Plan</button>
                     </div>
                 </div>
-            </div>
-            <div class="hosting-section">
+            </section>
+            <section id="rust-section">
                 <h2>Rust Hosting</h2>
+                <p>Find the best plan for Rust game hosting.</p>
                 <div class="select-hosting">
                     <button class="hosting-button">Select Rust Hosting</button>
                 </div>
@@ -125,18 +134,26 @@
                         <button>Choose Plan</button>
                     </div>
                 </div>
-            </div>
-            <div class="support-section">
+            </section>
+            <section id="support-section">
                 <h2>Support</h2>
                 <p>If you have any questions or need assistance, please reach out via:</p>
                 <p>Email: <a href="mailto:support@plaxinova.com">support@plaxinova.com</a></p>
                 <p>Discord: <a href="https://discord.gg/yourdiscordlink" target="_blank">Join our Discord</a></p>
-            </div>
-            <a class="get-started-button" href="#">Get Started</a>
+            </section>
         </main>
         <footer>
             <p>&copy; 2023 Plaxinova Hosting Service. All rights reserved.</p>
         </footer>
     </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+            // Change the URL without reloading the page
+            history.pushState(null, null, `/${sectionId}`);
+        }
+    </script>
 </body>
 </html>
